@@ -218,7 +218,7 @@ export default function AdminDashboard() {
                   <TokenList tokens={waitingTokens} onAction={updateTokenStatus} />
                 </TabsContent>
                 <TabsContent value="completed" className="mt-0 focus-visible:ring-0 outline-none">
-                  <TokenList tokens={[...completedTokens, ...cancelledTokens].sort((a, b) => b.createdAt - a.createdAt)} hideActions />
+                  <TokenList tokens={[...completedTokens, ...cancelledTokens].sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime())} hideActions />
                 </TabsContent>
               </div>
             </Tabs>

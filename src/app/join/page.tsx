@@ -83,7 +83,7 @@ export default function JoinQueuePage() {
                   </div>
                   <div className="space-y-3">
                     <Label htmlFor="service" className="text-base font-semibold">Service Type</Label>
-                    <Select onValueChange={setServiceType} required>
+                    <Select onValueChange={(val: string | null) => setServiceType(val ?? '')} required>
                       <SelectTrigger className="rounded-2xl h-14 px-6 border-muted bg-background/50 focus:ring-4 focus:ring-primary/10 transition-all text-lg">
                         <SelectValue placeholder="What can we help you with?" />
                       </SelectTrigger>
