@@ -101,7 +101,7 @@ export default function AdminDashboard() {
         </div>
         <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
           <AlertDialog open={isResetDialogOpen} onOpenChange={setIsResetDialogOpen}>
-            <AlertDialogTrigger asChild>
+            <AlertDialogTrigger>
               <Button 
                 variant="outline" 
                 className="rounded-2xl h-14 px-6 border-destructive/20 text-destructive hover:bg-destructive/10 font-bold w-full sm:w-auto"
@@ -286,7 +286,7 @@ function TokenList({ tokens, onAction, hideActions }: {
 
             {!hideActions && onAction && token.status !== 'completed' && token.status !== 'cancelled' && (
               <DropdownMenu>
-                <DropdownMenuTrigger asChild>
+                <DropdownMenuTrigger>
                   <Button variant="ghost" size="icon" className="rounded-2xl h-10 w-10 hover:bg-primary/10 transition-all">
                     <MoreVertical className="h-5 w-5" />
                   </Button>

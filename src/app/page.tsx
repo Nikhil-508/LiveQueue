@@ -38,14 +38,18 @@ export default function LandingPage() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="flex flex-col sm:flex-row gap-4 pt-4"
             >
-              <Button asChild size="lg" className="rounded-full px-10 h-14 text-lg font-bold shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all">
-                <Link href="/join">
-                  Join the Queue <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="rounded-full px-10 h-14 text-lg font-bold glass hover:bg-muted/50 transition-all">
-                <Link href="/status">View Live Status</Link>
-              </Button>
+              <Link 
+                href="/join" 
+                className={cn(buttonVariants({ size: "lg" }), "rounded-full px-10 h-14 text-lg font-bold shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all")}
+              >
+                Join the Queue <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+              <Link 
+                href="/status" 
+                className={cn(buttonVariants({ variant: "outline", size: "lg" }), "rounded-full px-10 h-14 text-lg font-bold glass hover:bg-muted/50 transition-all")}
+              >
+                View Live Status
+              </Link>
             </motion.div>
           </div>
         </div>

@@ -54,14 +54,14 @@ export default function Navbar() {
         <div className="flex md:hidden items-center gap-2">
           <ThemeToggle />
           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
+            <DropdownMenuTrigger>
               <Button variant="ghost" size="icon">
                 <Menu className="h-5 w-5" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-48">
               {navItems.map((item) => (
-                <DropdownMenuItem key={item.href} asChild>
+                <DropdownMenuItem key={item.href}>
                   <Link href={item.href} className="flex items-center gap-2 w-full">
                     <item.icon className="h-4 w-4" />
                     {item.name}

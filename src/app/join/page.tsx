@@ -16,6 +16,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
+import { cn } from '@/lib/utils';
 
 export default function JoinQueuePage() {
   const router = useRouter();
@@ -149,9 +150,12 @@ export default function JoinQueuePage() {
                 </div>
 
                 <div className="w-full space-y-4">
-                  <Button asChild className="w-full h-14 rounded-2xl text-lg font-bold shadow-lg shadow-primary/25">
-                    <Link href="/status">Track Live Status</Link>
-                  </Button>
+                  <Link 
+                    href="/status" 
+                    className={cn(buttonVariants(), "w-full h-14 rounded-2xl text-lg font-bold shadow-lg shadow-primary/25 flex items-center justify-center")}
+                  >
+                    Track Live Status
+                  </Link>
                   <Button variant="ghost" className="w-full h-12 text-muted-foreground font-semibold hover:text-primary" onClick={() => setTokenReceived(null)}>
                     Book another token
                   </Button>
@@ -165,5 +169,5 @@ export default function JoinQueuePage() {
   );
 }
 
-// Minimal Link import for the success state
 import Link from 'next/link';
+import { buttonVariants } from '@/components/ui/button';
