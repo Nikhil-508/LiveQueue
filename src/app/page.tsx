@@ -60,7 +60,7 @@ export default function LandingPage() {
       <section className="w-full py-20 bg-muted/30">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why choose LiveQueue?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why choose EasyQueue?</h2>
             <p className="text-muted-foreground text-lg">Everything you need to manage your customer flow.</p>
           </div>
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
@@ -132,11 +132,11 @@ export default function LandingPage() {
       <footer className="w-full py-12 border-t glass">
         <div className="container px-4 md:px-6 mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-primary-foreground font-black text-xl shadow-lg shadow-primary/20">Q</div>
-            <span className="text-2xl font-bold">LiveQueue</span>
+            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-primary-foreground font-black text-xl shadow-lg shadow-primary/20">EZQ</div>
+            <span className="text-2xl font-bold">EasyQueue</span>
           </div>
           <p className="text-muted-foreground font-medium">
-            © 2026 LiveQueue. All rights reserved.
+            © 2026 EasyQueue. All rights reserved.
           </p>
           <div className="flex gap-8 text-muted-foreground font-medium">
             <Link href="#" className="hover:text-primary transition-colors">Privacy</Link>

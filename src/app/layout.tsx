@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LiveQueue | Modern Queue Management",
+  title: "EasyQueue | Modern Queue Management",
   description: "A lightweight token booking system for clinics, salons, and offices.",
 };
 

@@ -28,9 +28,9 @@ export default function Navbar() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold">
-            Q
+            EZQ
           </div>
-          <span className="text-xl font-bold tracking-tight">LiveQueue</span>
+          <span className="text-xl font-bold tracking-tight">EasyQueue</span>
         </Link>
 
         {/* Desktop Nav */}
